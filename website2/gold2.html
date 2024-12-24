@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold</title>
+    <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div style="background: url(./Docs/Assets/bg.png) center/cover no-repeat;"
+        class="min-h-screen md:py-10 py-6 w-full flex items-center justify-center p-4">
+        <div class="flex items-center justify-center lg:flex-row flex-col max-w-7xl mx-auto w-full lg:gap-10 gap-4">
+            <div class="md:max-w-[30%] w-full">
+                <a href="./index.html">
+                    <img src="./Docs/Assets/logo.png" class="max-w-[17rem] w-full mx-auto mb-6" alt="">
+                </a>
+                <div class="rounded-lg w-full mt-16">
+                    <h2
+                        class="font-medium text-center uppercase text-white text-lg bg-[#b8a04a] tracking-wide rounded-t-lg p-1">
+                        SPOT RATE</h2>
+                    <div class="bgColor text-white rounded-b-lg p-4 font-medium grid grid-cols-3 gap-2">
+                        <p></p>
+                        <p class="text-zinc-300 text-center">ASK</p>
+                        <p class="text-zinc-300 text-center">BID</p>
+                        <p class="font-semibold py-3">GOLD O <sub>z</sub> </p>
+                        <p class="border-2 p-3 rounded-lg  text-center">2615.50</p>
+                        <p class="border-2 p-3 rounded-lg  text-center">2615.94</p>
+                        <p></p>
+                        <p class="flex items-center justify-center gap-2 text-sm pt-1"><i
+                                class="fa-solid fa-arrow-trend-down text-red-600 "></i> 2610.63</p>
+                        <p class="flex items-center justify-center gap-2 text-sm pt-1"><i
+                                class="fa-solid fa-arrow-trend-up text-green-600 "></i> 2610.63</p>
+                    </div>
+                </div>
+
+                <div class="rounded-lg grid grid-cols-3 p-4 w-full bgColor mt-3 items-center">
+                    <p class="text-green-600 text-sm">75%</p>
+                    <p class="text-green-600 text-center font-semibold text-lg">+0.450%</p>
+                    <p class="text-red-600 text-sm text-end">25%</p>
+                    <div class="col-span-3 relative">
+                        <p class=" rounded-full w-full bg-[#9f3131] h-1"></p>
+                        <p class=" rounded-full  absolute top-0 left-0 w-[75%] bg-green-500 h-1"></p>
+
+                    </div>
+                    <p class="text-xs tracking-wider font-medium  pt-2 text-zinc-300">BUYERS</p>
+                    <p class="text-xs tracking-wider font-medium  pt-2 text-zinc-300"></p>
+                    <p class="text-end text-xs tracking-wider font-medium pt-2 text-zinc-300">SELLERS</p>
+                </div>
+            </div>
+            <div class="md:max-w-[70%] w-full">
+                <div class="lg:flex hidden items-center justify-between gap-4 text-[#c5ae52]">
+                    <div class="flex items-center gap-2">
+                        <i
+                            class="fa-solid fa-calendar-days bg-[#c5ae52] text-[#43402d] w-12 h-12 flex items-center justify-center rounded-full text-2xl"></i>
+                            <p id="current-date">
+                                <span class="block font-semibold text-xl !leading-tight">--</span>
+                                -- --
+                            </p>
+                            
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i
+                            class="fa-regular fa-clock bg-[#c5ae52] text-[#43402d] pt-[1px] w-9 h-9 flex items-center justify-center rounded-full text-xl"></i>
+                        <p id="current-time">
+                            <span class="font-semibold text-2xl !leading-tight">-- : -- </span>
+                            <span class="opacity-70">--</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto lg:mt-10 rounded-lg overflow-hidden">
+                    <table class="min-w-full table-auto border-collapse bgColor2 text-white">
+                        <thead>
+                            <tr class="bg-[#b8a04a] text-left">
+                                <th
+                                    class="border-y border-[#6a664c] p-5 flex items-center justify-between font-semibold text-xl text-yellow-100">
+                                    COMMODITY</th>
+                                <th class="border-y border-[#6a664c] p-5 font-semibold text-xl text-yellow-100">WEIGHT
+                                </th>
+                                <th
+                                    class="border-y text-nowrap border-[#6a664c] p-5 font-semibold text-xl text-yellow-100">
+                                    SELL <sub class="font-normal opacity-70 text-sm">AED</sub></th>
+                                <th
+                                    class="border-y text-nowrap border-[#6a664c] p-5 font-semibold text-xl text-yellow-100">
+                                    BUY <sub class="font-normal opacity-70 text-sm">AED</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-medium md:text-lg">
+                            <tr>
+                                <td class="border-y border-[#6a664c] p-5">GOLD <sub class="font-normal opacity-85 ">TEN
+                                        TOLA</sub></td>
+                                <td class="border-y border-[#6a664c] p-5">1 TTB</td>
+                                <td class="border-y border-[#6a664c] p-5">35,978</td>
+                                <td class="border-y border-[#6a664c] p-5">36,083</td>
+                            </tr>
+                            <tr>
+                                <td class="border-y border-[#6a664c] p-5">GOLD <sub
+                                        class="font-normal opacity-85">995</sub>
+                                </td>
+                                <td class="border-y border-[#6a664c] p-5">1 KG</td>
+                                <td class="border-y border-[#6a664c] p-5">307,472</td>
+                                <td class="border-y border-[#6a664c] p-5">308,286</td>
+                            </tr>
+                            <tr>
+                                <td class="border-y border-[#6a664c] p-5">GOLD <sub
+                                        class="font-normal opacity-85">9999</sub>
+                                </td>
+                                <td class="border-y border-[#6a664c] p-5">1 KG</td>
+                                <td class="border-y border-[#6a664c] p-5">308,766</td>
+                                <td class="border-y border-[#6a664c] p-5">308,825</td>
+                            </tr>
+                            <tr>
+                                <td class="border-y border-[#6a664c] p-5">GOLD <sub
+                                        class="font-normal opacity-85">9999</sub>
+                                </td>
+                                <td class="border-y border-[#6a664c] p-5">1 GM</td>
+                                <td class="border-y border-[#6a664c] p-5">308.77</td>
+                                <td class="border-y border-[#6a664c] p-5">308.82</td>
+                            </tr>
+                            <tr>
+                                <td class="border-y border-[#6a664c] p-5">GOLD <sub
+                                        class="font-normal opacity-85">22k</sub>
+                                </td>
+                                <td class="border-y border-[#6a664c] p-5">1 GM</td>
+                                <td class="border-y border-[#6a664c] p-5">285.83</td>
+                                <td class="border-y border-[#6a664c] p-5">286.68</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="font-medium text-[#b8a04a] mt-5 pb-1">News</p>
+                <div class="rounded-lg p-4 w-full text-zinc-100 font-medium border-2 border-[#6a664c] overflow-hidden">
+                    <div class="marquee">
+                        <p>
+
+                            Australia Central Banks To Release Minutes • South Korea Consumer Confidence Index Tumbles In December - BoK • Stock market will find it hard to rally unless the dollar and bonds calm ... • Shutdown deal cost IRS $20 billion to probe for tax cheats, maybe for goo... • Netflix payout of $150 million for this pair of NFL games is a ‘prestige’... • Hanukkah coincides with Christmas this year, setting up a gift-giving con... • N. Macedonia, Slovenia Central Bank Chiefs Say Financial Stability Has Fu... • RMDs are due in a week. There are valid reasons to procrastinate — but th... • Coreweave, Klarna may break IPO slump in 2025 — but OpenAI, SpaceX will w... • Slovenia Housing Prices Rise Again In Q3, Sales At 14-Year Low
+                        </p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>
