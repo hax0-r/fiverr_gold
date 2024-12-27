@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold</title>
+    <link rel="shortcut icon" href="./Docs/Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Docs/Styles/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <div class="min-h-screen bg-[#000] w-full ">
+
+        <div class="flex items-center md:justify-between justify-center md:flex-row flex-col p-4 max-w-7xl w-full mx-auto">
+            <a href="./index.html">
+                <img src="./Docs/Assets/logo1.png" class="h-20 mx-auto mb-6 " alt="">
+            </a>
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-clock  text-[#fff]  text-xl"></i>
+                    <p id="current-time" class="text-white text-sm">
+                        <span class="font-semibold text-2xl !leading-tight">-- : -- </span>
+                        <span class="opacity-70">--</span>
+                    </p>
+
+                </div>
+                <div class="flex items-center gap-3">
+                    <i class="fa-solid fa-calendar-days text-[#fff] text-xl"></i>
+                    <p id="current-date" class="text-white text-sm">
+                        <span class="block font-semibold   !leading-tight">--</span>
+                        -- --
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 w-full text-zinc-100 font-medium border-y-2 border-[#6a664c] overflow-hidden">
+            <div class="marquee inline-block text-nowrap font-normal">
+                <span class="font-semibold text-lg">Gold Price News</span> : Debt-Ceiling Deal Sees Gold Slip
+                After Biggest GLD ETF Inflow in 3 Years — Atsuko Whitehouse
+            </div>
+        </div>
+
+        <div class="flex items-center justify-center lg:flex-row flex-col max-w-7xl mx-auto w-full md:py-10 py-5 px-4 lg:gap-10 gap-4">
+            <div class="md:max-w-[30%] w-full">
+                <div class="rounded-lg w-full ">
+                    <h2 class="font-medium text-center uppercase  text-lg bg-[#1d1d1d] text-white tracking-wide rounded-t-lg p-1">
+                        SPOT RATE</h2>
+                    <div class="bg-[#ffffff] text-black rounded-b-lg p-4 font-medium grid grid-cols-3 gap-2">
+                        <p></p>
+                        <p class="text-zinc-500 text-center">ASK</p>
+                        <p class="text-zinc-500 text-center">BID</p>
+                        <p class="font-semibold py-3">GOLD O <sub>z</sub> </p>
+                        <p class="border-2 border-zinc-400 p-3 rounded-lg   text-center">2615.50</p>
+                        <p class="border-2 border-zinc-400 p-3 rounded-lg  text-center">2615.94</p>
+                        <p></p>
+                        <p class="flex items-center justify-center text-zinc-800 gap-2 text-sm pt-1"><i
+                                class="fa-solid fa-arrow-trend-down text-red-600 "></i> 2610.63</p>
+                        <p class="flex items-center justify-center text-zinc-800 gap-2 text-sm pt-1"><i
+                                class="fa-solid fa-arrow-trend-up text-green-600 "></i> 2610.63</p>
+                        <p class="font-semibold mt-5 py-3">SILVER O <sub>z</sub> </p>
+                        <p class="border-2 border-zinc-400 p-3 rounded-lg mt-5 text-center"> 29.558 </p>
+                        <p class="border-2 border-zinc-400 p-3 rounded-lg mt-5 text-center"> 29.559 </p>
+                        <p></p>
+                        <p class="flex items-center justify-center text-zinc-800 gap-2 text-sm pt-1"><i
+                                class="fa-solid fa-arrow-trend-down text-red-600 "></i> 2610.63</p>
+                        <p class="flex items-center justify-center text-zinc-800 gap-2 text-sm pt-1"><i
+                                class="fa-solid fa-arrow-trend-up text-green-600 "></i> 2610.63</p>
+                    </div>
+                </div>
+
+                <div class="rounded-lg grid grid-cols-3 p-4 w-full bg-[#ffffff] mt-3 items-center">
+                    <p class="text-green-600 text-sm">0%</p>
+                    <p class="text-green-600 text-center font-semibold text-lg">+0%</p>
+                    <p class="text-red-600 text-sm text-end">0%</p>
+                    <p class="col-span-3 rounded-full w-full bg-[#9f3131] h-1"></p>
+                    <p class="text-xs tracking-wider font-medium  pt-2 text-zinc-500">BUYERS</p>
+                    <p class="text-xs tracking-wider font-medium  pt-2 text-zinc-500"></p>
+                    <p class="text-end text-xs tracking-wider font-medium pt-2 text-zinc-500">SELLERS</p>
+                </div>
+            </div>
+            <div class="md:max-w-[70%] w-full">
+                <div class="overflow-x-auto rounded-lg overflow-hidden">
+                    <table class="min-w-full table-auto border-collapse bg-white text-[#1d1d1d]">
+                        <thead>
+                            <tr class="bg-[#222222] text-left text-white">
+                                <th
+                                    class=" p-5 flex items-center justify-between font-semibold text-xl ">
+                                    COMMODITY</th>
+                                <th class=" p-5 font-semibold text-xl ">WEIGHT
+                                </th>
+                                <th class=" text-nowrap p-5 font-semibold text-xl ">
+                                    SELL <sub class="font-normal opacity-70 text-sm">AED</sub></th>
+                                <th class=" text-nowrap p-5 font-semibold text-xl ">
+                                    BUY <sub class="font-normal opacity-70 text-sm">AED</sub></th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-medium md:text-lg">
+                            <tr>
+                                <td class="border-y border-zinc-400 p-5">GOLD <sub class="font-normal opacity-85 ">TEN
+                                        TOLA</sub></td>
+                                <td class="border-y border-zinc-400 p-5">1 TTB</td>
+                                <td class="border-y border-zinc-400 p-5">35,978</td>
+                                <td class="border-y border-zinc-400 p-5">36,083</td>
+                            </tr>
+                            <tr>
+                                <td class="border-y border-zinc-400 p-5">GOLD <sub
+                                        class="font-normal opacity-85">995</sub>
+                                </td>
+                                <td class="border-y border-zinc-400 p-5">1 KG</td>
+                                <td class="border-y border-zinc-400 p-5">307,472</td>
+                                <td class="border-y border-zinc-400 p-5">308,286</td>
+                            </tr>
+                            <tr>
+                                <td class="border-y border-zinc-400 p-5">GOLD <sub
+                                        class="font-normal opacity-85">9999</sub>
+                                </td>
+                                <td class="border-y border-zinc-400 p-5">1 KG</td>
+                                <td class="border-y border-zinc-400 p-5">308,766</td>
+                                <td class="border-y border-zinc-400 p-5">308,825</td>
+                            </tr>
+                            <tr>
+                                <td class="border-y border-zinc-400 p-5">GOLD <sub
+                                        class="font-normal opacity-85">9999</sub>
+                                </td>
+                                <td class="border-y border-zinc-400 p-5">1 GM</td>
+                                <td class="border-y border-zinc-400 p-5">308.77</td>
+                                <td class="border-y border-zinc-400 p-5">308.82</td>
+                            </tr>
+                            <tr>
+                                <td class="border-y border-zinc-400 p-5">GOLD <sub
+                                        class="font-normal opacity-85">22k</sub>
+                                </td>
+                                <td class="border-y border-zinc-400 p-5">1 GM</td>
+                                <td class="border-y border-zinc-400 p-5">285.83</td>
+                                <td class="border-y border-zinc-400 p-5">286.68</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./Docs/Javascripts/global.js"></script>
+</body>
+
+</html>
