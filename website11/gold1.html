@@ -12,14 +12,21 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Docs/Styles/global.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
 
+    <div
+        class="fixed top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#000_1px)] bg-[size:20px_20px]">
+    </div>
 
-    <div class="min-h-screen bg-[#000] w-full ">
+    <div class="min-h-screen w-full ">
 
-        <div class="flex items-center md:justify-between justify-center md:flex-row flex-col p-4 max-w-7xl w-full mx-auto">
+
+        <div
+            class="flex items-center md:justify-between justify-center md:flex-row flex-col p-4 max-w-7xl w-full mx-auto">
             <a href="./index.html">
                 <img src="./Docs/Assets/logo1.png" class="h-20 mx-auto mb-6 " alt="">
             </a>
@@ -42,17 +49,28 @@
             </div>
         </div>
 
-        <div class="p-4 w-full text-zinc-100 font-medium border-y-2 border-[#6a664c] overflow-hidden">
+        <div class="p-4 w-full text-zinc-100 font-medium border-y-2 border-zinc-700 overflow-hidden">
             <div class="marquee inline-block text-nowrap font-normal">
                 <span class="font-semibold text-lg">Gold Price News</span> : Debt-Ceiling Deal Sees Gold Slip
                 After Biggest GLD ETF Inflow in 3 Years — Atsuko Whitehouse
             </div>
         </div>
 
-        <div class="flex items-center justify-center lg:flex-row flex-col max-w-7xl mx-auto w-full md:py-10 py-5 px-4 lg:gap-10 gap-4">
+        <div class="max-w-7xl  w-full mx-auto px-4 pt-5">
+            <div class="swiper mySwiper border-2 border-zinc-700 rounded-2xl overflow-hidden">
+                <div class="swiper-wrapper md:h-[20rem] h-[15rem]">
+                    <div class="swiper-slide"><img src="./Docs/Assets/slilde (2).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./Docs/Assets/slilde (3).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./Docs/Assets/slilde (4).jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="flex items-center justify-center lg:flex-row flex-col max-w-7xl mx-auto w-full md:py-10 py-5 px-4 lg:gap-10 gap-4">
             <div class="md:max-w-[30%] w-full">
                 <div class="rounded-lg w-full ">
-                    <h2 class="font-medium text-center uppercase  text-lg bg-[#1d1d1d] text-white tracking-wide rounded-t-lg p-1">
+                    <h2 class="font-medium text-center uppercase  text-lg bg-[#fcca0b] tracking-wide rounded-t-lg p-1">
                         SPOT RATE</h2>
                     <div class="bg-[#ffffff] text-black rounded-b-lg p-4 font-medium grid grid-cols-3 gap-2">
                         <p></p>
@@ -91,9 +109,8 @@
                 <div class="overflow-x-auto rounded-lg overflow-hidden">
                     <table class="min-w-full table-auto border-collapse bg-white text-[#1d1d1d]">
                         <thead>
-                            <tr class="bg-[#222222] text-left text-white">
-                                <th
-                                    class=" p-5 flex items-center justify-between font-semibold text-xl ">
+                            <tr class="bg-[#fcca0b] text-left text-">
+                                <th class=" p-5 flex items-center justify-between font-semibold text-xl ">
                                     COMMODITY</th>
                                 <th class=" p-5 font-semibold text-xl ">WEIGHT
                                 </th>
@@ -151,7 +168,21 @@
     </div>
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./Docs/Javascripts/global.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 </body>
 
 </html>
