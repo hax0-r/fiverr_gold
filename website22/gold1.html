@@ -21,21 +21,38 @@
     <div style="background: url(./Docs/Assets/bg.jpg) center/cover no-repeat;" class="min-h-screen w-full ">
 
 
-        <div class="flex items-center md:flex-row flex-col justify-between p-4 max-w-7xl gap-5 w-full mx-auto">
+        <div class="flex items-center md:flex-row flex-col justify-between p-4 md:max-w-[95%] gap-5 w-full mx-auto">
             <a href="./index.html">
-                <img src="./Docs/Assets/logo.png" class="h-20 mx-auto " alt="">
+                <img src="./Docs/Assets/logo.png" class="h-20 md:h-[12vh] mx-auto " alt="">
             </a>
-            <div class="p-4 w-full text-zinc-100  font-medium border-2 max-w-lg rounded-lg border-[#364d84] overflow-hidden">
-                <div class="marquee inline-block text-nowrap font-normal">
-                    <span class="font-semibold text-lg">Gold Price News</span> : Debt-Ceiling Deal Sees Gold Slip
-                    After Biggest GLD ETF Inflow in 3 Years — Atsuko Whitehouse
+            <div class="grid-cols-3 grid px-4  gap-2  md:max-w-[34vw] border rounded-lg border-zinc-500 md:p-[1vw p-2]">
+                <div class="border-zinc-500 border-r rounded-lg p-2 flex md:flex-row flex-col items-center gap-2">
+                    <img src="./Docs/Assets/us.png" class="md:h-[3vh] h-5  object-cover" alt="">
+                    <p
+                        class="text-white font-semibold md:text-[1vw] text-2xl text-center justify-center !leading-tight flex items-center">
+                        3:09 <span class="flex flex-col pl-1 text-sm md:text-[.7vw]">PM</span>
+                    </p>
+                </div>
+                <div class=" rounded-lg p-2 flex md:flex-row flex-col items-center gap-2">
+                    <img src="./Docs/Assets/uk.png" class="md:h-[3vh] h-5  object-cover" alt="">
+                    <p
+                        class="text-white font-semibold md:text-[1vw] text-2xl text-center justify-center !leading-tight flex items-center">
+                        3:09 <span class="flex flex-col pl-1 text-sm md:text-[.7vw]">PM</span>
+                    </p>
+                </div>
+                <div class="border-l border-zinc-500 rounded-lg p-2 flex md:flex-row flex-col items-center gap-2">
+                    <img src="./Docs/Assets/japan.png" class="md:h-[3vh] h-5  object-cover" alt="">
+                    <p
+                        class="text-white font-semibold md:text-[1vw] text-2xl text-center justify-center !leading-tight flex items-center">
+                        3:09 <span class="flex flex-col pl-1 text-sm md:text-[.7vw]">PM</span>
+                    </p>
                 </div>
             </div>
             <div class="flex items-center gap-8">
                 <div class="flex items-center gap-2">
                     <i class="fa-regular fa-clock  text-[#fff]  text-xl"></i>
                     <p id="current-time" class="text-white text-sm">
-                        <span class="font-semibold text-2xl !leading-tight">-- : -- </span>
+                        <span class="font-semibold text-[1.5vw] !leading-tight">-- : -- </span>
                         <span class="opacity-70">--</span>
                     </p>
 
@@ -51,66 +68,38 @@
         </div>
 
 
-<!-- 
-        <div class="max-w-7xl w-full mx-auto gap-3 flex md:flex-row flex-col px-4">
-            <div class="grid md:grid-cols-3 grid-cols-1 gap-3">
-
-                <div class="   w-full   md:col-span-2">
-                    <div class="swiper mySwiper border-2 border-zinc-700 rounded-2xl overflow-hidden">
-                        <div class="swiper-wrapper w-full    md:h-[20rem] h-[15rem]">
-                            <div class="swiper-slide"><img src="./Docs/Assets/slide (4).jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./Docs/Assets/slide (3).jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./Docs/Assets/slide (2).jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="./Docs/Assets/slide (1).jpg" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex glass items-center gap-8 w-full py-5">
-                    <div class="text-center w-full">
-                        <p id="current-time" class="text-white text-3xl">
-                            <span class="">-- : -- </span>
-                            <span class="">--</span>
-                        </p>
-                        <p id="current-date" class="text-white pt-4">
-                            <span class="block font-semibold   !leading-tight">--</span>
-                            -- --
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-       
-
         <div
-            class="flex items-center justify-center lg:flex-row flex-col max-w-7xl mx-auto w-full md:pt-10 pt-5 px-4 lg:gap-10 gap-4">
+            class="flex items-center justify-center lg:flex-row flex-col md:max-w-[95%] mx-auto w-full md:pt-10 pt-5 px-4 lg:gap-5 gap-4">
             <div class="md:max-w-[30%] w-full">
-                <div class="rounded-lg w-full ">
-                    <h2 class="font-medium text-center uppercase  text-lg bg-[#eaa44e] tracking-wide rounded-t-lg p-1">
+                <div class="rounded-lg w-full">
+                    <h2 class="font-medium text-center uppercase  p-4 md:p-[1.2vw] md:text-[1.5vw] text-white  bg-[#eaa44e] tracking-wide rounded-t-lg ">
                         SPOT RATE</h2>
-                    <div class="glass2 text-white !rounded-b-lg p-4 font-medium grid grid-cols-3 gap-2">
-                        <p></p>
-                        <p class="text-zinc-300 text-center">ASK</p>
-                        <p class="text-zinc-300 text-center">BID</p>
-                        <p class="font-semibold py-3">GOLD O <sub>z</sub> </p>
-                        <p class="border-2 border-zinc-400 p-3 rounded-lg   text-center">2615.50</p>
-                        <p class="border-2 border-zinc-400 p-3 rounded-lg  text-center">2615.94</p>
-                        <p></p>
-                        <p class="flex items-center justify-center text-zinc-200 gap-2 text-sm pt-1"><i
-                                class="fa-solid fa-arrow-trend-down text-red-600 "></i> 2610.63</p>
-                        <p class="flex items-center justify-center text-zinc-200 gap-2 text-sm pt-1"><i
-                                class="fa-solid fa-arrow-trend-up text-green-600 "></i> 2610.63</p>
-                    </div>
+                        <div class="glass2 text-white !rounded-b-lg md:p-[1vw] p-4 font-medium grid grid-cols-2 md:gap-[.5vw] gap-2">
+                            <p class="font-semibold col-span-2 text-center text-[1.1vw]">GOLD O <sub>z</sub> </p>
+                            <p class="text-zinc-300 md:text-[1.1vw] text-center">ASK</p>
+                            <p class="text-zinc-300 md:text-[1.1vw] text-center">BID</p>
+                            <p class="border-2 p-[1vw] rounded-lg md:text-[1.1vw] text-center">2615.50</p>
+                            <p class="border-2 p-[1vw] rounded-lg md:text-[1.1vw] text-center">2615.94</p>
+                            <p class="flex items-center  justify-center gap-2 text-sm md:text-[1.1vw]"><i
+                                    class="fa-solid fa-arrow-trend-down text-red-600 "></i> 2610.63</p>
+                            <p class="flex items-center justify-center text-sm md:text-[1.1vw] gap-2"><i
+                                    class="fa-solid fa-arrow-trend-up text-green-600 "></i> 2610.63</p>
+                          
+                        </div>
                 </div>
 
                 <div class="rounded-lg grid grid-cols-3 p-4 w-full glass mt-3 items-center">
-                    <p class="text-green-600 text-sm">0%</p>
-                    <p class="text-green-600 text-center font-semibold text-lg">+0%</p>
-                    <p class="text-red-600 text-sm text-end">0%</p>
-                    <p class="col-span-3 rounded-full w-full bg-[#9f3131] h-1"></p>
-                    <p class="text-xs tracking-wider font-medium  pt-2 text-zinc-200">BUYERS</p>
-                    <p class="text-xs tracking-wider font-medium  pt-2 text-zinc-200"></p>
-                    <p class="text-end text-xs tracking-wider font-medium pt-2 text-zinc-200">SELLERS</p>
+                    <p class="text-green-600 md:text-[1vw]">75%</p>
+                <p class="text-green-600 text-center font-semibold md:text-[1.1vw]">+0.450%</p>
+                <p class="text-red-600 md:text-[1vw] text-end">25%</p>
+                <div class="col-span-3 relative">
+                    <p class=" rounded-full w-full bg-[#9f3131] h-1"></p>
+                    <p class=" rounded-full  absolute top-0 left-0 w-[75%] bg-green-500 h-1"></p>
+
+                </div>
+                <p class="md:text-[.9vw] tracking-wider font-medium text-sm  pt-2 text-zinc-300">BUYERS</p>
+                <p class="md:text-[.9vw] tracking-wider font-medium text-sm pt-2 text-zinc-300"></p>
+                <p class="text-end md:text-[.9vw] tracking-wider font-medium pt-2 text-zinc-300">SELLERS</p>
                 </div>
             </div>
             <div class="md:max-w-[70%] w-full">
@@ -118,55 +107,56 @@
                     <table class="min-w-full table-auto border-collapse glass text-[#fff]">
                         <thead>
                             <tr class="bg-[#eaa44e] text-left text-">
-                                <th class=" p-5 flex items-center justify-between font-semibold text-xl ">
+                                <th class=" p-4 md:p-[1.5vw] flex items-center justify-between font-semibold md:text-[1.5vw] ">
                                     COMMODITY</th>
-                                <th class=" p-5 font-semibold text-xl ">WEIGHT
+                                <th class=" p-4 md:p-[1.5vw] font-semibold md:text-[1.5vw] ">WEIGHT
                                 </th>
-                                <th class=" text-nowrap p-5 font-semibold text-xl ">
-                                    SELL <sub class="font-normal opacity-70 text-sm">AED</sub></th>
-                                <th class=" text-nowrap p-5 font-semibold text-xl ">
-                                    BUY <sub class="font-normal opacity-70 text-sm">AED</sub></th>
+                                <th class=" text-nowrap p-4 md:p-[1.5vw] font-semibold md:text-[1.5vw] ">
+                                    SELL <sub class="font-normal opacity-70 text-[1vw]">AED</sub></th>
+                                <th class=" text-nowrap p-4 md:p-[1.5vw] font-semibold md:text-[1.5vw] ">
+                                    BUY <sub class="font-normal opacity-70 text-[1vw]">AED</sub></th>
                             </tr>
                         </thead>
-                        <tbody class="font-medium md:text-lg">
+                        <tbody class="font-medium md:text-[1.2vw]">
                             <tr>
-                                <td class="border-y border-zinc-400 p-5">GOLD <sub class="font-normal opacity-85 ">TEN
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">GOLD <sub
+                                        class="font-normal opacity-85 ">TEN
                                         TOLA</sub></td>
-                                <td class="border-y border-zinc-400 p-5">1 TTB</td>
-                                <td class="border-y border-zinc-400 p-5">35,978</td>
-                                <td class="border-y border-zinc-400 p-5">36,083</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">1 TTB</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">35,978</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">36,083</td>
                             </tr>
                             <tr>
-                                <td class="border-y border-zinc-400 p-5">GOLD <sub
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">GOLD <sub
                                         class="font-normal opacity-85">995</sub>
                                 </td>
-                                <td class="border-y border-zinc-400 p-5">1 KG</td>
-                                <td class="border-y border-zinc-400 p-5">307,472</td>
-                                <td class="border-y border-zinc-400 p-5">308,286</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">1 KG</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">307,472</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">308,286</td>
                             </tr>
                             <tr>
-                                <td class="border-y border-zinc-400 p-5">GOLD <sub
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">GOLD <sub
                                         class="font-normal opacity-85">9999</sub>
                                 </td>
-                                <td class="border-y border-zinc-400 p-5">1 KG</td>
-                                <td class="border-y border-zinc-400 p-5">308,766</td>
-                                <td class="border-y border-zinc-400 p-5">308,825</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">1 KG</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">308,766</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">308,825</td>
                             </tr>
                             <tr>
-                                <td class="border-y border-zinc-400 p-5">GOLD <sub
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">GOLD <sub
                                         class="font-normal opacity-85">9999</sub>
                                 </td>
-                                <td class="border-y border-zinc-400 p-5">1 GM</td>
-                                <td class="border-y border-zinc-400 p-5">308.77</td>
-                                <td class="border-y border-zinc-400 p-5">308.82</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">1 GM</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">308.77</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">308.82</td>
                             </tr>
                             <tr>
-                                <td class="border-y border-zinc-400 p-5">GOLD <sub
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">GOLD <sub
                                         class="font-normal opacity-85">22k</sub>
                                 </td>
-                                <td class="border-y border-zinc-400 p-5">1 GM</td>
-                                <td class="border-y border-zinc-400 p-5">285.83</td>
-                                <td class="border-y border-zinc-400 p-5">286.68</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">1 GM</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">285.83</td>
+                                <td class="border-y border-zinc-400 p-4 md:p-[1.5vw]">286.68</td>
                             </tr>
                         </tbody>
                     </table>
@@ -174,7 +164,7 @@
             </div>
         </div>
 
-        <div class="grid md:grid-cols-3 grid-cols-1 max-w-7xl w-full mx-auto gap-10 p-4">
+        <div class="grid md:grid-cols-3 grid-cols-1 md:max-w-[95%] w-full mx-auto gap-10 p-4">
             <div class="grid-cols-1">
                 <div class="tradingview-widget-container">
                     <div class="tradingview-widget-container__widget"></div>
@@ -226,7 +216,7 @@
             </div>
         </div>
 
-        <p class="md:max-w-[95%] w-full text-center text-white pb-5 mx-auto px-5">Powered By Technology</p>
+        <p class="md:max-w-[95%] w-full text-center text-white pb-5 md:text-[1vw] mx-auto px-5">Powered By Technology</p>
     </div>
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
