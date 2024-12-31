@@ -16,7 +16,7 @@ function updateTime() {
     hours = (hours % 12 || 12).toString().padStart(2, '0');
 
     timeElement.innerHTML = `
-        <span class="font-semibold text-2xl !leading-tight">${hours} : ${minutes}</span>
+        <span class="font-semibold md:text-[2vw] text-xl !leading-tight">${hours} : ${minutes}</span>
         <span class="opacity-70">${ampm}</span>
     `;
 }
@@ -38,7 +38,7 @@ function updateDate() {
     const year = now.getFullYear();
 
     dateElement.innerHTML = `
-        <span class="block font-semibold text-xl !leading-tight">${dayName}</span>
+        <span class="block font-semibold md:text-[1.5vw] text-xl !leading-tight">${dayName}</span>
         ${date} ${month} ${year}
     `;
 }
